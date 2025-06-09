@@ -8,7 +8,16 @@ on:
 jobs:
   # check format do not need any build so run in parallel with other jobs
   check:
+    name: Check ${{ matrix.script }}
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        script:
+          - start:js
+          - start:ts
+          - typecheck
 
     steps:
       - uses: actions/checkout@v4
@@ -20,11 +29,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Start js
-        run: npm run start:js
-
-      - name: Start ts
-        run: npm run start:ts
-
-      - name: Typecheck
-        run: npm run typecheck
+      - name: Run `${{ matrix.script }}``
+        run: npm run ${{ matrix.script }}
