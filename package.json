@@ -1,0 +1,22 @@
+{
+  "name": "fastify-type-provider-zod",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start:js": "node src/server.js",
+    "start:ts": "node --experimental-strip-types src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fastify": "5.3.3",
+    "fastify-type-provider-zod": "5.0.0",
+    "zod": "3.25.56"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}
