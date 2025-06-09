@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/node": "^22.15.30",
     "fastify": "5.3.3",
     "fastify-type-provider-zod": "5.0.0",
     "zod": "3.25.56"
