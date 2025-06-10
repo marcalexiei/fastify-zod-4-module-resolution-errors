@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "start:js": "node src/server.js",
-    "start:ts": "node --no-warnings=ExperimentalWarning src/server.ts"
+    "start": "node --no-warnings=ExperimentalWarning src/server.ts"
   },
   "author": "",
   "license": "ISC",
