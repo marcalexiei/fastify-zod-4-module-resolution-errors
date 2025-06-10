@@ -6,7 +6,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "start:js": "node src/server.js",
-    "start:ts": "node --experimental-strip-types src/server.ts"
+    "start:ts": "node --no-warnings=ExperimentalWarning src/server.ts"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@types/node": "^22.15.30",
     "fastify": "5.3.3",
-    "fastify-type-provider-zod": "5.0.0",
+    "fastify-type-provider-zod": "5.0.1",
     "zod": "3.25.56"
   },
   "devDependencies": {

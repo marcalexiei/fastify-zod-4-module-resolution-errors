@@ -25,8 +25,12 @@ app.withTypeProvider<ZodTypeProvider>().route({
     },
   },
   handler: (req, res) => {
-    res.send(req.query.name);
+    res.send({ status: req.query.name });
   },
 });
 
 app.listen({ port: 4949 });
+
+setTimeout(() => {
+  app.close();
+}, 1500);

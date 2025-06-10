@@ -29,3 +29,7 @@ app.withTypeProvider().route({
 });
 
 app.listen({ port: 4949 });
+
+setTimeout(() => {
+  app.close();
+}, 1500);
