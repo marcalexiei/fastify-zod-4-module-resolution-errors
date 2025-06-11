@@ -8,14 +8,10 @@ Use node 22
 npm i
 ```
 
-## Server errors
+## Start server
 
 ```sh
-npm run start:js
-```
-
-```sh
-npm run start:ts
+npm run start
 ```
 
 ## Typecheck errors
